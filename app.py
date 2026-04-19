@@ -112,17 +112,10 @@ if st.button("Search"):
 
                 st.subheader("🧭 Choose Hospital for Navigation")
 
-                if "selected_hospital" not in st.session_state:
-                   st.session_state.selected_hospital = None
-
-                selected_hospital = st.selectbox(
+                 selected_hospital = st.selectbox(
                  "Select a hospital",
-                 list(hospital_options.keys()),
-                 index=0 if st.session_state.selected_hospital is None 
-                 else list(hospital_options.keys()).index(st.session_state.selected_hospital)
-)
-
-                st.session_state.selected_hospital = selected_hospital
+                  list(hospital_options.keys())
+                  )
 
                 if selected_hospital:
                   latitude, longitude = hospital_options[selected_hospital]
