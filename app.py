@@ -112,7 +112,7 @@ if st.button("Search"):
 
                 st.subheader("🧭 Choose Hospital for Navigation")
 
-                 selected_hospital = st.selectbox(
+                selected_hospital = st.selectbox(
                  "Select a hospital",
                   list(hospital_options.keys())
                   )
