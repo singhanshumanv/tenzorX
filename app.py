@@ -47,7 +47,7 @@ pincode_map = dict(zip(hospitals["pincode"].astype(str), hospitals["city"]))
 symptoms_list, symptom_embeddings = build_index(clinical)
 st.set_page_config(page_title="AI Healthcare Navigator", layout="wide")
 # UI Title
-st.title("🏥 AI Healthcare Navigator & Cost Estimator")
+st.title("🏥 Arogya- AI Healthcare Navigator & Cost Estimator")
 st.caption("Find the right hospital, estimate costs, and understand treatment pathways")
 
 # Inputs
